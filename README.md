@@ -1,6 +1,7 @@
 # Flask-Python Application
 
 This repository contains a simple Flask-based Python application developed by Harsha Vinjamuri. It demonstrates basic web application concepts using Flask, including routing, templating, and form handling.
+There are Some Lecture codes for Learning Python-Flask.
 
 ## Features
 
@@ -45,7 +46,7 @@ Flask-Python/
 │
 ├── app.py           # Main Flask application file
 ├── templates/       # HTML templates (e.g., index.html)
-├── static/          # Static assets (CSS, JavaScript, images)
+├── static/          # Static assets (CSS, JavaScript, images)--- optional
 ├── requirements.txt # List of Python dependencies
 └── README.md        # Project documentation
 ```

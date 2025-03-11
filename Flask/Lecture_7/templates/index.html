@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Details</title>
+    </head>
+    <body>
+        <form method="POST">
+            {{ contact.hidden_tag() }} 
+            <p>{{ contact.name.label }} {{ contact.name() }}</p>
+            <p>{{ contact.submit() }}</p>
+        </form>
+        {% if name %}  
+            <p>Your name is: {{ name }}</p>
+        {% endif %}
+    </body>
+</html>

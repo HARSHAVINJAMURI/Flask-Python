@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Details</title>
+    </head>
+    <body>
+        <h2>Contact Form</h2>
+
+        <!-- Flash Messages for Errors -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div style="color: red;">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form action="/contact" method="POST">
+            {{ form.hidden_tag() }}
+
+            <p>{{ form.name.label }} {{ form.name }}</p>
+
+            <p>{{ form.Gender.label }} {{ form.Gender }}</p>
+
+            <p>{{ form.Address.label }} {{ form.Address }}</p>
+
+            <p>{{ form.email.label }} {{ form.email }}</p>
+
+            <p>{{ form.Age.label }} {{ form.Age }}</p>
+
+            <p>{{ form.Language.label }} {{ form.Language }}</p>
+
+            <p>{{ form.submit }}</p>
+        </form>
+    </body>
+</html>
